@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>TOYPON!</title>
+        <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+            <h1 class="titulo">TOYPON!🔥💧🌱</h1>
+
+            <h2 class="subtitulo">Elegí a tu personaje:</h2>
+
+            <div id="contenedor-tarjetas" class="tarjetas">
+            </div>
+            
+            <button id="boton-mascota">Seleccionar</button>
+        </section>
+
+        <section id="ver-mapa">
+            <div class="sub-mapa">
+                <h2 id="sub-mapa1" class="subtitulo">Recorre el mapa con tu</h2>
+                <h2 id="sub-mapa2" class="subtitulo">Toypon!</h2>
+            </div>
+            <canvas id="mapa"></canvas>
+            <button id="mover-arriba" onmouseup="detenerMovimiento()" onmousedown="moverArriba()">⬆</button>
+            <div>
+                <button id="mover-izquierda" onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">⬅</button>
+                <button id="mover-abajo" onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">⬇</button>
+                <button id="mover-derecha" onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">➡</button>
+            </div>
+        </section>
+
+        <section id="seleccionar-ataque">
+            <h1 class="titulo">TOYPON!🔥💧🌱</h1>
+
+            <div class="imagenes-combate">
+                <div class="combate-jugador">
+                    <h2 class="nombres">Tú</h2>
+                    <img id="imagen-jugador" src="">
+                </div>
+                <img src="fotos/vs.png" alt="versus">
+                <div class="combate-enemigo">
+                    <h2 class="nombres">Enemigo</h2>
+                    <img id="imagen-enemigo" src="">
+                </div>
+            </div>
+
+            <h2 class="subtitulo">Elegí tu ataque:</h2>
+
+            <div id="contenedor-ataques" class="tarjetas-ataques">
+            </div>
+
+            <div>
+                <div id="mensajes">  
+                    <p id="resultado">Buena suerte🤞🍀</p>
+
+                    <section id="reiniciar">
+                        <button id="boton-reiniciar">Reiniciar</button>
+                    </section>
+                </div>
+
+                
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">0</p>
+                    <p id="mascota-jugador"></p>
+                    <div id="ataques-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">0</p>
+                    <p id="mascota-enemigo"></p>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+        <script src="js/toypon.js"></script>
+    </body>
+</html>
