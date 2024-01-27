@@ -249,8 +249,6 @@ function secuenciaAtaques() {
 }
 
 function seleccionarMascotaEnemigo(enemigo) {
-    let mascotaAleatoria = aleatorio(0, toypones.length - 1)
-
     spanMascotaEnemigo.innerHTML = enemigo.nombre
     document.getElementById("imagen-enemigo").src = enemigo.foto
     ataquesToyponEnemigo = enemigo.ataques
